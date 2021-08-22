@@ -1,0 +1,72 @@
+{
+  "costs": [
+    {
+      "date": "2021-08-22",
+      "time": "18:11",
+      "category": "Напитки ",
+      "sum": "50",
+      "currency": "UAH",
+      "comment": "coca-cola",
+      "id": 1
+    }
+  ],
+  "incomes": [
+    {
+      "date": "2021-08-22",
+      "time": "01:12",
+      "category": "Зарплата",
+      "sum": "10000",
+      "currency": "UAH",
+      "comment": "august salary",
+      "id": 1
+    }
+  ],
+  "costsCat": [
+    {
+      "title": "Еда ",
+      "id": 1
+    },
+    {
+      "title": "Напитки ",
+      "id": 2
+    },
+    {
+      "title": "Разное",
+      "id": 3
+    },
+    {
+      "title": "toys",
+      "id": 4
+    },
+    {
+      "title": "car",
+      "id": 5
+    }
+  ],
+  "incomesCat": [
+    {
+      "title": "Зарплата",
+      "id": 1
+    },
+    {
+      "title": "Бонус",
+      "id": 2
+    },
+    {
+      "title": "car",
+      "id": 3
+    },
+    {
+      "title": "toys",
+      "id": 4
+    },
+    {
+      "title": "lotary",
+      "id": 5
+    },
+    {
+      "title": "freelance",
+      "id": 6
+    }
+  ]
+}

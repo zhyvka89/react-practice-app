@@ -1,18 +1,33 @@
+import {
+  // useLocation,
+  Link
+} from "react-router-dom";
 import MainInfo from "../MainInfo/MainInfo";
-import Button from "../_thare/button/Button";
-import {mainInfoCosts, mainInfoComes, mainInfoBalance} from "../../assets/mainData.json";
+// import Button from "../_share/Button/Button";
+import Section from '../_share/Section/Section';
+import {
+  mainInfoBalance,
+  mainInfoCosts,
+  mainInfoIncomes,
+} from "../../assets/mainInfoData.json";
 
-const MainPage = ({handleOpenTransaction}) => {
+const MainPage = () => {
+  // const location = useLocation();
+
   return (
-    <>
+    <Section>
       <h1>Журнал расходов</h1>
-      <MainInfo title="Pасходы" periodsData={mainInfoCosts} type="costs" handleOpenTransaction={handleOpenTransaction}/>
-      <MainInfo title="Доходы" periodsData={mainInfoComes} type="incomes" handleOpenTransaction={handleOpenTransaction}/>
-      <MainInfo title="Баланс" periodsData={mainInfoBalance} handleOpenTransaction={handleOpenTransaction}/>
-      <Button title='Все расходы'/>
-      <Button title='Все доходы'/>
-    </>
-  )
-}
+      <MainInfo title="Расходы" periodsData={mainInfoCosts} transType="costs" />
+      <MainInfo
+        title="Доходы"
+        periodsData={mainInfoIncomes}
+        transType="incomes"
+      />
+      <MainInfo title="Баланс" periodsData={mainInfoBalance} />
+      <Link to={"/history/costs"}>Все расходы</Link>
+      <Link to={"history/incomes"}>Все доходы</Link>
+    </Section>
+  );
+};
 
 export default MainPage;
