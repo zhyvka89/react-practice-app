@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 import { addCategory } from "../../redux/categories/categoriesOperations";
 import Button from "../_share/Button/Button";
 
-export default function CategoriesTransactions({transType, handleAddCategory}) {
+export default function CategoriesTransactions({ transType }) {
   const [newCategory, setNewCategory] = useState('');
   const history = useHistory();
   const dispatch = useDispatch();
